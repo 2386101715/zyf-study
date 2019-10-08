@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<body>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+    <script>
+         var div = document.getElementsByTagName("div");
+	     for(var i=0;i<div.length;i++){
+		   div[i].style.display="inline-block";
+		   div[i].style.marginLeft=15+"px";
+		   div[i].style.width=30+'px';
+		   div[i].style.height=30+'px';
+		   div[i].style.backgroundColor= "red";
+		   div[i].style.borderRadius="100%";
+		   div[i].onclick=function(){
+			this.style.backgroundColor= "blue";
+			this.style.transition="1s";
+			this.style.borderRadius="";
+		}
+	}
+    </script>
+</body>
+</html>
