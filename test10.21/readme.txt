@@ -4,7 +4,7 @@
          var h1 = document.getElementById('h1') 
          var str = 'a';
          var str2 = 'b';
-         var st3 = str.Concote(str2);
+         var st3 = str.concat(str2);
          console.log(st3);
          h1.innerHTML = st3;
     </script>
