@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <input type="text" placeholder="请输入金额" id="in1">
+		<button id="btn">确认存款</button>
+		<script>
+			var btn = document.getElementById('btn');
+			var in1 = document.getElementById('in1');
+			//var str = in1.value;
+			btn.onclick = function(){
+				var str = in1.value;
+				if(str.length<8){
+					var sstr = str.padEnd(6,'0');
+                    console.log(sstr);
+				}else{
+					alert("存款失败");
+				}
+               
+               
+			}
+		</script>
+</body>
+</html>
